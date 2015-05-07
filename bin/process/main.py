@@ -186,7 +186,7 @@ def main(robotIP):
                                       axisMask, times, isAbsolute)
 
 
-def createLine(effector, space, tabParam):
+def createLine(tabParam):
     dx = tabParam[0]  # translation axis X (meters)
     dy = tabParam[1]  # translation axis Y (meters)
     dz = tabParam[2]  # translation axis Z (meters)
@@ -194,8 +194,9 @@ def createLine(effector, space, tabParam):
     dwy = tabParam[4]  # rotation axis Y (radians)
     dwz = tabParam[5]  # rotation axis Z (radians)
 
-    motionProxy.positionInterpolation(effector, space, path,
-                                      axisMask, times, isAbsolute)
+    targetPos = [dx, dy, dz, dwx, dwy, dwz]
+
+    return targetPos
 
 
 if __name__ == "__main__":
