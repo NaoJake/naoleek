@@ -132,8 +132,8 @@ def customInit(robotIP):
         # uncomment the following line and modify the IP if you use this script outside Choregraphe.
         motion = ALProxy("ALMotion", robotIP, 55506)
         motion.angleInterpolationBezier(names, times, keys)
-    except BaseException, err:
-        print err
+    except BaseException as err:
+        print(err)
 
 
 def main(robotIP):
@@ -144,14 +144,14 @@ def main(robotIP):
     # Init proxies.
     try:
         motionProxy = ALProxy("ALMotion", robotIP, 55506)
-    except Exception, e:
-        print "Could not create proxy to ALMotion \n Error was : ", e
+    except Exception as e:
+        print("Could not create proxy to ALMotion \n Error was : ", e)
 
     try:
         postureProxy = ALProxy("ALRobotPosture", robotIP, 55506)
-    except Exception, e:
-        print "Could not create proxy to ALRobotPosture"
-        print "Error was: ", e
+    except Exception as e:
+        print("Could not create proxy to ALRobotPosture")
+        print("Error was: ", e)
 
     # Set NAO in Stiffness On
     StiffnessOn(motionProxy)
@@ -202,8 +202,7 @@ if __name__ == "__main__":
     robotIp = "127.0.0.1"
 
     if len(sys.argv) <= 1:
-        print
-        "Usage python motion_cartesianArm1.py robotIP (optional default: 127.0.0.1)"
+        print("Usage python motion_cartesianArm1.py robotIP (optional default: 127.0.0.1)")
     else:
         robotIp = sys.argv[1]
 
