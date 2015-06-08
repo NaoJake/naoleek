@@ -1,8 +1,4 @@
 def createA():
-    do_F_B_E_C_J_M_Dash()
-    do_F_B_E_C_J_M_Dash()
-    do_A_D_Dash()
-
     pass
 
 
