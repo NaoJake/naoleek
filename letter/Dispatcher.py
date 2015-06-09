@@ -1,13 +1,32 @@
+from letter.Line import do_vertical_dash, do_horizontal_dash
+
+
 def createA():
-    pass
+    do_vertical_dash(True)
+    do_vertical_dash(True)
+    do_horizontal_dash(True, True)
+    do_vertical_dash(False)
+    do_horizontal_dash(False, True)
+    do_horizontal_dash(True, True)
+    do_vertical_dash(False)
 
 
 def createB():
-    pass
+    do_vertical_dash(True)
+    do_vertical_dash(True)
+    do_horizontal_dash(True, True)
+    do_vertical_dash(False)
+    do_horizontal_dash(False, True)
+    do_horizontal_dash(True, True)
+    do_vertical_dash(False)
+    do_horizontal_dash(False, True)
 
 
 def createC():
-    pass
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(False, True)
+    do_vertical_dash(True)
+    do_horizontal_dash(True, True)
 
 
 def createD():
