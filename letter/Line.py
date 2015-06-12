@@ -6,6 +6,7 @@ dwx # rotation axis X (radians)
 dwy # rotation axis Y (radians)
 dwz # rotation axis Z (radians)
 """
+from bin.process.main import makeMove
 
 
 def do_horizontal_dash(goRight, fullDash):
@@ -18,7 +19,7 @@ def do_horizontal_dash(goRight, fullDash):
     else:
         target_pos = [-0.006, 0, 0, 0, 0, 0]
 
-    return target_pos
+    makeMove(target_pos)
 
 
 
@@ -28,11 +29,11 @@ def do_vertical_dash(goUp):
     else:
         target_pos = [0, -0.01, 0, 0, 0, 0]
 
-    return target_pos
+    makeMove(target_pos)
 
 
 
-def do_diagonal_dash(goRight, goUp) :
+def do_diagonal_dash(goRight, goUp):
     if goRight and goUp:
         target_pos = [0.06, 0.01, 0, 0, 0, 0]
     elif goRight and not goUp:
@@ -42,4 +43,4 @@ def do_diagonal_dash(goRight, goUp) :
     else:
         target_pos = [-0.06, -0.01, 0, 0, 0, 0]
 
-    return target_pos
+    makeMove(target_pos)

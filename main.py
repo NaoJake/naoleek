@@ -8,6 +8,7 @@ import motion
 import almath
 from naoqi import ALProxy
 
+motionProxy = None
 
 def StiffnessOn(proxy):
     # We use the "Body" name to signify the collection of all joints
@@ -149,6 +150,7 @@ def main(robotIP, robotPort):
 
     # Init proxies.
     try:
+        global motionProxy
         motionProxy = ALProxy("ALMotion", robotIP, robotPort)
     except Exception as e:
         print("Could not create proxy to ALMotion \n Error was : ", e)
@@ -169,6 +171,9 @@ def main(robotIP, robotPort):
 
     customInit(robotIP)
 
+
+
+def makeMove(targetPos):
     effector = "RArm"
     space = motion.FRAME_ROBOT
     axisMask = almath.AXIS_MASK_VEL  # just control position
@@ -177,34 +182,12 @@ def main(robotIP, robotPort):
     # Since we are in relative, the current position is zero
     currentPos = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 
-    # Define the changes relative to the current position
-    dx = 0.03  # translation axis X (meters)
-    dy = 0.00  # translation axis Y (meters)
-    dz = 0.00  # translation axis Z (meters)
-    dwx = 0.00  # rotation axis X (radians)
-    dwy = 0.00  # rotation axis Y (radians)
-    dwz = 0.00  # rotation axis Z (radians)
-    targetPos = [dx, dy, dz, dwx, dwy, dwz]
-
     # Go to the target and back again
     path = [targetPos, currentPos]
     times = [2.0, 4.0]  # seconds
 
     motionProxy.positionInterpolation(effector, space, path,
                                       axisMask, times, isAbsolute)
-
-
-def createLine(tabParam):
-    dx = tabParam[0]  # translation axis X (meters)
-    dy = tabParam[1]  # translation axis Y (meters)
-    dz = tabParam[2]  # translation axis Z (meters)
-    dwx = tabParam[3]  # rotation axis X (radians)
-    dwy = tabParam[4]  # rotation axis Y (radians)
-    dwz = tabParam[5]  # rotation axis Z (radians)
-
-    targetPos = [dx, dy, dz, dwx, dwy, dwz]
-
-    return targetPos
 
 
 if __name__ == "__main__":
