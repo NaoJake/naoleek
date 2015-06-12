@@ -143,7 +143,8 @@ def main(robotIP, robotPort):
     Warning: Needs a PoseInit before executing
     """
     motion
-    print("test")
+
+    #Lancement de la partie du pendu !
     hangmanInit.playGame(motion)
 
 

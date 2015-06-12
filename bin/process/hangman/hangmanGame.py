@@ -58,7 +58,7 @@ class HangmanGame:
         return self.wordToFind
 
     def correctLetter(self, letter):
-        "retourne vrai si la lettre est contenue dans le mot à trouver"
+        "retourne vrai si la lettre est contenue dans le mot a trouver"
         i = 0
         result = False
         while (i < len(self.wordToFind)) and not(result):
