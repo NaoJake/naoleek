@@ -132,7 +132,7 @@ def customInit(robotIP):
 
     try:
         # uncomment the following line and modify the IP if you use this script outside Choregraphe.
-        motion = ALProxy("ALMotion", robotIP, 55506)
+        motion = ALProxy("ALMotion", robotIP, robotPort)
         motion.angleInterpolationBezier(names, times, keys)
     except BaseException as err:
         print(err)
