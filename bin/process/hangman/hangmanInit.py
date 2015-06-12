@@ -2,7 +2,7 @@ __author__ = 'Justine Dewilde'
 
 from naoqi import ALProxy
 from bin.process.hangman import hangmanGame
-from bin.process.naoUtils import naoTalk
+from bin.process.naoUtils import *
 import time
 from bin.process.strUtils import getPositionOfLetterInWord
 
@@ -11,6 +11,8 @@ def playGame(motion):
 
     try:
         welcome = "Bonjour, nous allons jouer au pendu ! Je vais d'abord choisir un mot"
+        naoLEDSOther(motion)
+        time.sleep('1')
         #motion.say(welcome)
         print(welcome)
         hmGame = hangmanGame.HangmanGame()
@@ -19,6 +21,7 @@ def playGame(motion):
         naoTalk(motion, "C'est parti !")
         print("Voila ! Ce mot a {0} lettres".format(str(len(randomWord))))
         print("C'est parti !")
+        time.sleep(1)
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         #ajouter la partie permettant d'ecrire les traits : nbr de traits > (len(randomWord)
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -29,12 +32,14 @@ def playGame(motion):
             randomLetter = hmGame.getRandomLetter()
             hmGame.putLetter(randomLetter)
             if hmGame.correctLetter(randomLetter):
+                naoLEDSCorrect(motion)
                 naoTalk(motion, "Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 #fonction a mettre ici : nao ecrit la lettre : lettre > randomLetter & liste des positions :  getPositionOfLetterInWord(randomLetter, randomWord)
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 print("Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
             else:
+                naoLEDSError(motion)
                 naoTalk(motion, "Perdu ! La lettre {0} ne fait pas partie du mot".format(str(randomLetter)))
                 print("Perdu ! La lettre {0} ne fait pas partie du mot".format(str(randomLetter)))
                 hmGame.nbrRemainingChances -= 1

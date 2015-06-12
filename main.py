@@ -142,12 +142,6 @@ def main(robotIP, robotPort):
     """ Example showing a path of two positions
     Warning: Needs a PoseInit before executing
     """
-    motion
-
-    #Lancement de la partie du pendu !
-    hangmanInit.playGame(motion)
-
-
 
     # Init proxies.
     try:
@@ -163,7 +157,6 @@ def main(robotIP, robotPort):
         print("Error was: ", e)
 
 
-
     # Set NAO in Stiffness On
     StiffnessOn(motionProxy)
 
@@ -171,6 +164,9 @@ def main(robotIP, robotPort):
     postureProxy.goToPosture("StandInit", 0.5)
 
     customInit(robotIP)
+
+    #Lancement de la partie du pendu !
+    hangmanInit.playGame(motion)
 
 
 
