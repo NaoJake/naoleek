@@ -1,7 +1,8 @@
 # -*- encoding: UTF-8 -*-
 
 """Cartesian control: Arm trajectory example"""
-
+from bin.process.hangman import hangmanGame
+from bin.process.hangman import hangmanInit
 import sys
 import motion
 import almath
@@ -136,22 +137,29 @@ def customInit(robotIP):
         print(err)
 
 
-def main(robotIP):
+def main(robotIP, robotPort):
     """ Example showing a path of two positions
     Warning: Needs a PoseInit before executing
     """
+    motion
+    print("test")
+    hangmanInit.playGame(motion)
+
+
 
     # Init proxies.
     try:
-        motionProxy = ALProxy("ALMotion", robotIP, 55506)
+        motionProxy = ALProxy("ALMotion", robotIP, robotPort)
     except Exception as e:
         print("Could not create proxy to ALMotion \n Error was : ", e)
 
     try:
-        postureProxy = ALProxy("ALRobotPosture", robotIP, 55506)
+        postureProxy = ALProxy("ALRobotPosture", robotIP, robotPort)
     except Exception as e:
         print("Could not create proxy to ALRobotPosture")
         print("Error was: ", e)
+
+
 
     # Set NAO in Stiffness On
     StiffnessOn(motionProxy)
@@ -201,10 +209,11 @@ def createLine(tabParam):
 
 if __name__ == "__main__":
     robotIp = "127.0.0.1"
+    robotPort = 55506
 
     if len(sys.argv) <= 1:
         print("Usage python motion_cartesianArm1.py robotIP (optional default: 127.0.0.1)")
     else:
         robotIp = sys.argv[1]
 
-    main(robotIp)
+    main(robotIp, robotPort)
