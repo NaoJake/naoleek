@@ -44,3 +44,12 @@ def do_diagonal_dash(goRight, goUp):
         target_pos = [-0.06, -0.01, 0, 0, 0, 0]
 
     makeMove(target_pos)
+
+
+def do_z_dash(goUp):
+    if goUp:
+        target_pos = [0, 0, 0.01, 0, 0, 0]
+    else:
+        target_pos = [0, 0, -0.01, 0, 0, 0]
+
+    makeMove(target_pos)
