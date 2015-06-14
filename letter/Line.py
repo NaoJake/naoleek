@@ -56,6 +56,9 @@ def do_z_dash(go_up):
     makeMove(target_pos)
 
 
-def do_underletter_dash():
-    target_pos = [0.039, 0, 0, 0, 0, 0]
+def do_underletter_dash(go_right):
+    if go_right:
+        target_pos = [0.039, 0, 0, 0, 0, 0]
+    else:
+        target_pos = [-0.039, 0, 0, 0, 0, 0]
     makeMove(target_pos)

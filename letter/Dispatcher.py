@@ -9,6 +9,13 @@ def createA():
     do_horizontal_dash(False, True)
     do_horizontal_dash(True, True)
     do_vertical_dash(False)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createB():
@@ -20,13 +27,31 @@ def createB():
     do_horizontal_dash(True, True)
     do_vertical_dash(False)
     do_horizontal_dash(False, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_horizontal_dash(True, True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createC():
     do_horizontal_dash(True, True)
     do_horizontal_dash(False, True)
     do_vertical_dash(True)
+    do_vertical_dash(True)
     do_horizontal_dash(True, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createD():
@@ -34,6 +59,14 @@ def createD():
     do_vertical_dash(True)
     do_diagonal_dash(True, False)
     do_diagonal_dash(False, False)
+    #fin lettre
+
+    do_z_dash(True)
+    do_horizontal_dash(True, True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createE():
@@ -44,7 +77,15 @@ def createE():
     do_horizontal_dash(False, True)
     do_vertical_dash(True)
     do_horizontal_dash(True, True)
-    do_horizontal_dash(False, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createF():
@@ -53,7 +94,15 @@ def createF():
     do_horizontal_dash(False, True)
     do_vertical_dash(True)
     do_horizontal_dash(True, True)
-    do_horizontal_dash(False, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createG():
@@ -66,6 +115,15 @@ def createG():
     do_horizontal_dash(True, True)
     do_vertical_dash(True)
     do_horizontal_dash(False, False)
+    #fin lettre
+
+    do_z_dash(True)
+    do_horizontal_dash(True, False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createH():
@@ -76,17 +134,45 @@ def createH():
     do_vertical_dash(True)
     do_vertical_dash(False)
     do_vertical_dash(False)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createI():
+    do_z_dash(True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
     do_vertical_dash(True)
     do_vertical_dash(True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, False)
+    do_horizontal_dash(True, True)
+    do_z_dash(False)
 
 
 def createJ():
     do_horizontal_dash(True, True)
     do_vertical_dash(True)
     do_vertical_dash(True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, False)
+    do_horizontal_dash(True, True)
+    do_z_dash(False)
 
 
 def createK():
@@ -97,6 +183,13 @@ def createK():
     do_diagonal_dash(True, True)
     do_diagonal_dash(False, False)
     do_diagonal_dash(True, False)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createL():
@@ -105,6 +198,13 @@ def createL():
     do_vertical_dash(False)
     do_vertical_dash(False)
     do_horizontal_dash(True, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createM():
@@ -114,6 +214,13 @@ def createM():
     do_diagonal_dash(True, True)
     do_vertical_dash(False)
     do_vertical_dash(False)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createN():
@@ -123,6 +230,15 @@ def createN():
     do_diagonal_dash(True, False)
     do_vertical_dash(True)
     do_vertical_dash(True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createO():
@@ -132,6 +248,14 @@ def createO():
     do_vertical_dash(False)
     do_vertical_dash(False)
     do_horizontal_dash(False, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_horizontal_dash(True, True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createP():
@@ -140,6 +264,15 @@ def createP():
     do_horizontal_dash(True, True)
     do_vertical_dash(False)
     do_horizontal_dash(False, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createQ():
@@ -151,6 +284,14 @@ def createQ():
     do_horizontal_dash(False, True)
     do_horizontal_dash(True, True)
     do_diagonal_dash(False, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_diagonal_dash(True, False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createR():
@@ -160,14 +301,30 @@ def createR():
     do_vertical_dash(False)
     do_horizontal_dash(False, False)
     do_diagonal_dash(True, False)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createS():
-    do_diagonal_dash(True, True)
+    do_horizontal_dash(True, True)
     do_vertical_dash(True)
-    do_diagonal_dash(False, True)
+    do_horizontal_dash(False, True)
     do_vertical_dash(True)
-    do_diagonal_dash(True, True)
+    do_horizontal_dash(True, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createT():
@@ -178,6 +335,15 @@ def createT():
     do_vertical_dash(True)
     do_horizontal_dash(False, False)
     do_horizontal_dash(True, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createU():
@@ -188,6 +354,15 @@ def createU():
     do_horizontal_dash(True, True)
     do_vertical_dash(True)
     do_vertical_dash(True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createV():
@@ -199,6 +374,15 @@ def createV():
     do_diagonal_dash(True, False)
     do_diagonal_dash(True, True)
     do_vertical_dash(True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createW():
@@ -210,15 +394,31 @@ def createW():
     do_diagonal_dash(True, False)
     do_vertical_dash(True)
     do_vertical_dash(True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createX():
     do_diagonal_dash(True, True)
-    do_diagonal_dash(False,True)
+    do_diagonal_dash(False, True)
     do_diagonal_dash(True, False)
     do_diagonal_dash(True, True)
     do_diagonal_dash(False, False)
     do_diagonal_dash(True, False)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createY():
@@ -230,6 +430,15 @@ def createY():
     do_vertical_dash(False)
     do_vertical_dash(True)
     do_diagonal_dash(True, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def createZ():
@@ -238,12 +447,22 @@ def createZ():
     do_diagonal_dash(True, True)
     do_diagonal_dash(True, True)
     do_horizontal_dash(False, True)
+    #fin lettre
+
+    do_z_dash(True)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_vertical_dash(False)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, True)
+    do_horizontal_dash(True, False)
+    do_z_dash(False)
 
 
 def dispatcher(input):
     """
     A la fin d'une lettre on doit se retrouver au début du tiret de la lettre suivante
-    :param input:
+    :param input: la lettre à écrire
     """
     input.upper()
 
@@ -303,17 +522,26 @@ def dispatcher(input):
 
 def make_initial_dash(nb_dash):
     for i in range(nb_dash):
-        do_underletter_dash()
+        do_underletter_dash(True)
         do_z_dash(True)
         do_horizontal_dash(True, False)
         do_z_dash(False)
 
+    #retour au début
+    do_z_dash(True)
+    for i in range(nb_dash):
+        do_horizontal_dash(False, False)
+        do_underletter_dash(False)
+    do_z_dash(False)
+
 
 def write_at_position(letter, position):
+    current_position = 0
     for i in range(len(position)):
         do_z_dash(True)
-        for j in range(position[i]):
-            do_underletter_dash()
+        for j in range(current_position, position[i]):
+            current_position += 1
+            do_underletter_dash(True)
             do_horizontal_dash(True, False)
         do_horizontal_dash(True, True)
         do_vertical_dash(True)
