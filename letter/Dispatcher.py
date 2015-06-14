@@ -1,4 +1,4 @@
-from letter.Line import do_vertical_dash, do_horizontal_dash, do_diagonal_dash, do_z_dash
+from letter.Line import do_vertical_dash, do_horizontal_dash, do_diagonal_dash, do_z_dash, do_underletter_dash
 
 
 def createA():
@@ -179,6 +179,7 @@ def createT():
     do_horizontal_dash(False, False)
     do_horizontal_dash(True, True)
 
+
 def createU():
     do_vertical_dash(True)
     do_vertical_dash(True)
@@ -240,6 +241,10 @@ def createZ():
 
 
 def dispatcher(input):
+    """
+    A la fin d'une lettre on doit se retrouver au début du tiret de la lettre suivante
+    :param input:
+    """
     input.upper()
 
     if input == "A":
@@ -294,3 +299,23 @@ def dispatcher(input):
         createY()
     elif input == "Z":
         createZ()
+
+
+def make_initial_dash(nb_dash):
+    for i in range(nb_dash):
+        do_underletter_dash()
+        do_z_dash(True)
+        do_horizontal_dash(True, False)
+        do_z_dash(False)
+
+
+def write_at_position(letter, position):
+    for i in range(len(position)):
+        do_z_dash(True)
+        for j in range(position[i]):
+            do_underletter_dash()
+            do_horizontal_dash(True, False)
+        do_horizontal_dash(True, True)
+        do_vertical_dash(True)
+        do_z_dash(False)
+        dispatcher(letter)

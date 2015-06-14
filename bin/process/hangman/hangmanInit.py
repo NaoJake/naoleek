@@ -1,3 +1,5 @@
+from letter.Dispatcher import make_initial_dash, write_at_position
+
 __author__ = 'Justine Dewilde'
 
 from naoqi import ALProxy
@@ -24,6 +26,7 @@ def playGame(motion):
         time.sleep(1)
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         #ajouter la partie permettant d'ecrire les traits : nbr de traits > (len(randomWord)
+        make_initial_dash(len(randomWord))
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         print(randomWord)
 
@@ -36,6 +39,7 @@ def playGame(motion):
                 naoTalk(motion, "Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 #fonction a mettre ici : nao ecrit la lettre : lettre > randomLetter & liste des positions :  getPositionOfLetterInWord(randomLetter, randomWord)
+                write_at_position(randomLetter, getPositionOfLetterInWord(randomLetter, randomWord))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 print("Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
             else:
