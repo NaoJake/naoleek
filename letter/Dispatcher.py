@@ -547,3 +547,11 @@ def write_at_position(letter, position):
         do_vertical_dash(True)
         do_z_dash(False)
         dispatcher(letter)
+        current_position += 1
+
+    #retour au début
+    do_z_dash(True)
+    for k in range(current_position):
+        do_horizontal_dash(False, True)
+        do_underletter_dash(False)
+    do_z_dash(False)
