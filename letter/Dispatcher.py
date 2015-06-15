@@ -465,6 +465,7 @@ def dispatcher(input, motionProxy):
     A la fin d'une lettre on doit se retrouver au début du tiret de la lettre suivante
     :param input: la lettre à écrire
     """
+    print("dispztcher")
     input.upper(motionProxy)
 
     if input == "A":
@@ -522,18 +523,22 @@ def dispatcher(input, motionProxy):
 
 
 def make_initial_dash(nb_dash, motionProxy):
+    print("ecriture dash")
     for i in range(nb_dash):
+        print(i)
         do_underletter_dash(True, motionProxy)
         do_z_dash(True, motionProxy)
         do_horizontal_dash(True, False, motionProxy)
         do_z_dash(False, motionProxy)
 
     #retour au début
+    print("dash terminé, retour au début")
     do_z_dash(True, motionProxy)
     for i in range(nb_dash):
         do_horizontal_dash(False, False, motionProxy)
         do_underletter_dash(False, motionProxy)
     do_z_dash(False, motionProxy)
+    print("rendu au début")
 
 
 def write_at_position(letter, position, motionProxy):
