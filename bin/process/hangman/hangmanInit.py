@@ -34,7 +34,7 @@ def playGame(motionTalk, motionLED, motionProxy):
         while not(hmGame.didNaoLost()) and not(hmGame.didNaoWin()):
             randomLetter = ""
             while True :
-                randomLetter = (raw_input('Entrez une lettre: '))
+                randomLetter = str(raw_input('Entrez une lettre: '))
                 if(hmGame.lettersAlreadySay.count(randomLetter) == 0) :
                     break
 
@@ -45,7 +45,8 @@ def playGame(motionTalk, motionLED, motionProxy):
                 naoTalk(motionTalk, "Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 #fonction a mettre ici : nao ecrit la lettre : lettre > randomLetter & liste des positions :  getPositionOfLetterInWord(randomLetter, randomWord)
-                write_at_position(randomLetter, getPositionOfLetterInWord(randomLetter, randomWord), motionProxy)
+                positions = getPositionOfLetterInWord(randomLetter, randomWord)
+                write_at_position(randomLetter, positions, motionProxy)
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 print("Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
             else:
