@@ -1,12 +1,12 @@
 # -*- encoding: UTF-8 -*-
 
 """Cartesian control: Arm trajectory example"""
-from bin.process.hangman import hangmanGame
-from bin.process.hangman import hangmanInit
-import sys
-import motion
 import almath
+import motion
 from naoqi import ALProxy
+import sys
+from bin.process.hangman import hangmanInit
+
 
 motionProxy = None
 

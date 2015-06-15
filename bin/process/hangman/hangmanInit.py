@@ -1,12 +1,12 @@
+import time
+from bin.process.hangman import hangmanGame
+from bin.process.naoUtils import naoLEDSOther, naoTalk, naoLEDSCorrect, naoLEDSError
+from bin.process.strUtils import getPositionOfLetterInWord
 from letter.Dispatcher import make_initial_dash, write_at_position
 
 __author__ = 'Justine Dewilde'
 
-from naoqi import ALProxy
-from bin.process.hangman import hangmanGame
-from bin.process.naoUtils import *
-import time
-from bin.process.strUtils import getPositionOfLetterInWord
+
 
 def playGame(motion):
     "fonction permettant de lancer le jeu"

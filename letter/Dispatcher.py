@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 from letter.Line import do_vertical_dash, do_horizontal_dash, do_diagonal_dash, do_z_dash, do_underletter_dash
 
 
@@ -461,8 +462,8 @@ def createZ():
 
 def dispatcher(input):
     """
-    A la fin d'une lettre on doit se retrouver au début du tiret de la lettre suivante
-    :param input: la lettre à écrire
+    A la fin d'une lettre on doit se retrouver au debut du tiret de la lettre suivante
+    :param input: la lettre a ecrire
     """
     input.upper()
 
