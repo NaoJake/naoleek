@@ -27,7 +27,7 @@ def playGame(motionTalk, motionLED, motionProxy):
         time.sleep(1)
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         #ajouter la partie permettant d'ecrire les traits : nbr de traits > (len(randomWord)
-        make_initial_dash(len(randomWord), motionProxy)
+        #make_initial_dash(len(randomWord), motionProxy)
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         print(randomWord)
 

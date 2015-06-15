@@ -1,13 +1,11 @@
 # -*- encoding: UTF-8 -*-
 
 """Cartesian control: Arm trajectory example"""
-import almath
-import motion
 from naoqi import ALBroker, ALProxy
 from bin.process.hangman import hangmanInit
 
-robotIp = "127.0.0.1"
-robotPort = 50249
+robotIp = "172.16.6.117"
+robotPort = 9559
 motionProxy = None
 myBroker = ALBroker("myBroker", "0.0.0.0", 0, robotIp, robotPort)
 

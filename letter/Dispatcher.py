@@ -544,7 +544,7 @@ def make_initial_dash(nb_dash, motionProxy):
 def write_at_position(letter, position, motionProxy):
     current_position = 0
     for i in range(len(position)):
-        print("current position : " + current_position)
+        print("current position : " + str(current_position))
         do_z_dash(True, motionProxy)
         for j in range(current_position, position[i]):
             current_position += 1
