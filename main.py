@@ -3,11 +3,17 @@
 """Cartesian control: Arm trajectory example"""
 import almath
 import motion
-from naoqi import ALProxy
+from naoqi import ALProxy, ALBroker
 import sys
 from bin.process.hangman import hangmanInit
 
-
+robotIp = "127.0.0.1"
+robotPort = 55506
+myBroker = ALBroker("myBroker",
+                   "0.0.0.0",  # listen to anyone
+                   0,  # find a free port and use it
+                   robotIp,  # parent broker IP
+                   robotPort)  # parent broker port
 motionProxy = None
 
 def StiffnessOn(proxy):
@@ -196,9 +202,9 @@ if __name__ == "__main__":
     robotIp = "127.0.0.1"
     robotPort = 55506
 
-    if len(sys.argv) <= 1:
-        print("Usage python motion_cartesianArm1.py robotIP (optional default: 127.0.0.1)")
-    else:
-        robotIp = sys.argv[1]
+    #if len(sys.argv) <= 1:
+    #    print("Usage python motion_cartesianArm1.py robotIP (optional default: 127.0.0.1)")
+    #else:
+    #    robotIp = sys.argv[1]
 
     main(robotIp, robotPort)
