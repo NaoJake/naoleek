@@ -13,7 +13,7 @@ def playGame(motionTalk, motionLED, motionProxy):
 
     try:
         welcome = "Bonjour, nous allons jouer au pendu ! Je vais d'abord choisir un mot"
-        #naoLEDSOther(motionLED)
+        naoLEDSOther(motionLED)
         time.sleep(1)
         naoTalk(motionTalk, welcome)
         print(welcome)
@@ -42,16 +42,15 @@ def playGame(motionTalk, motionLED, motionProxy):
             #randomLetter = hmGame.getRandomLetter()
             hmGame.putLetter(randomLetter)
             if hmGame.correctLetter(randomLetter):
-                #naoLEDSCorrect(motionLED)
+                naoLEDSCorrect(motionLED)
                 naoTalk(motionTalk, "Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 #fonction a mettre ici : nao ecrit la lettre : lettre > randomLetter & liste des positions :  getPositionOfLetterInWord(randomLetter, randomWord)
-                print("write pos")
                 write_at_position(randomLetter, getPositionOfLetterInWord(randomLetter, randomWord), motionProxy)
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 print("Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
             else:
-                #naoLEDSError(motionLED)
+                naoLEDSError(motionLED)
                 naoTalk(motionTalk, "Perdu ! La lettre {0} ne fait pas partie du mot".format(str(randomLetter)))
                 print("Perdu ! La lettre {0} ne fait pas partie du mot".format(str(randomLetter)))
                 hmGame.nbrRemainingChances -= 1
