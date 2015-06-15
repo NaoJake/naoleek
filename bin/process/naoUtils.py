@@ -6,7 +6,6 @@ def naoTalk(motion, sentence):
     motion.say(sentence)
 
 def naoLEDSOther(motion):
-    motion.leds = ALProxy("ALLeds")
     rDuration = 0.05
     motion.leds.post.fadeRGB("FaceLed0", 0x375D81, rDuration)
     motion.leds.post.fadeRGB("FaceLed1", 0x8CC6D7, rDuration)
@@ -21,7 +20,6 @@ def naoLEDSOther(motion):
 
 
 def naoLEDSError(motion):
-    motion.leds = ALProxy("ALLeds")
     rDuration = 0.05
     motion.leds.post.fadeRGB("FaceLed0", 0xFF5B2B, rDuration)
     motion.leds.post.fadeRGB("FaceLed1", 0xB1221C, rDuration)
@@ -36,7 +34,6 @@ def naoLEDSError(motion):
 
 
 def naoLEDSCorrect(motion):
-    motion.leds = ALProxy("ALLeds")
     rDuration = 0.05
     motion.leds.post.fadeRGB("FaceLed0", 0x78A419, rDuration)
     motion.leds.post.fadeRGB("FaceLed1", 0x8FCF3C, rDuration)
