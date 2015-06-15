@@ -7,7 +7,6 @@ def getPositionOfLetterInWord(letter, word):
     while i < len(word):
         if(word[i] == letter):
             result.append(i)
-        else:
-            i += 1
+        i += 1
 
     return result

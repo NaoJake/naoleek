@@ -19,6 +19,7 @@ def playGame(motionTalk, motionLED, motionProxy):
         print(welcome)
         hmGame = hangmanGame.HangmanGame()
         randomWord = hmGame.getWordToFind()
+        time.sleep(1)
         naoTalk(motionTalk, "Voila ! Ce mot a {0} lettres".format(str(len(randomWord))))
         naoTalk(motionTalk, "C'est parti !")
         print("Voila ! Ce mot a {0} lettres".format(str(len(randomWord))))
