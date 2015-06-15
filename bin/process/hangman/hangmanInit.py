@@ -8,19 +8,19 @@ __author__ = 'Justine Dewilde'
 
 
 
-def playGame(motion):
+def playGame(motionTalk, motionLED):
     "fonction permettant de lancer le jeu"
 
     try:
         welcome = "Bonjour, nous allons jouer au pendu ! Je vais d'abord choisir un mot"
-        naoLEDSOther(motion)
-        time.sleep('1')
-        naoTalk(motion, welcome)
+        naoLEDSOther(motionLED)
+        time.sleep(1)
+        naoTalk(motionTalk, welcome)
         print(welcome)
         hmGame = hangmanGame.HangmanGame()
         randomWord = hmGame.getWordToFind()
-        naoTalk(motion, "Voila ! Ce mot a {0} lettres".format(str(len(randomWord))))
-        naoTalk(motion, "C'est parti !")
+        naoTalk(motionTalk, "Voila ! Ce mot a {0} lettres".format(str(len(randomWord))))
+        naoTalk(motionTalk, "C'est parti !")
         print("Voila ! Ce mot a {0} lettres".format(str(len(randomWord))))
         print("C'est parti !")
         time.sleep(1)
@@ -41,29 +41,29 @@ def playGame(motion):
             #randomLetter = hmGame.getRandomLetter()
             hmGame.putLetter(randomLetter)
             if hmGame.correctLetter(randomLetter):
-                naoLEDSCorrect(motion)
-                naoTalk(motion, "Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
+                naoLEDSCorrect(motionLED)
+                naoTalk(motionTalk, "Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 #fonction a mettre ici : nao ecrit la lettre : lettre > randomLetter & liste des positions :  getPositionOfLetterInWord(randomLetter, randomWord)
                 write_at_position(randomLetter, getPositionOfLetterInWord(randomLetter, randomWord))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 print("Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
             else:
-                naoLEDSError(motion)
-                naoTalk(motion, "Perdu ! La lettre {0} ne fait pas partie du mot".format(str(randomLetter)))
+                naoLEDSError(motionLED)
+                naoTalk(motionTalk, "Perdu ! La lettre {0} ne fait pas partie du mot".format(str(randomLetter)))
                 print("Perdu ! La lettre {0} ne fait pas partie du mot".format(str(randomLetter)))
                 hmGame.nbrRemainingChances -= 1
 
-            naoTalk(motion, "Il te reste {0} chances".format(str(hmGame.nbrRemainingChances)))
+            naoTalk(motionTalk, "Il te reste {0} chances".format(str(hmGame.nbrRemainingChances)))
             print("Il te reste {0} chance(s)".format(str(hmGame.nbrRemainingChances)))
             time.sleep(1)
 
         #Fin de partie !
         if hmGame.didNaoLost():
-            naoTalk(motion, "Bravo ! Tu as reussi, le mot est {0} ".format(randomWord))
+            naoTalk(motionTalk, "Bravo ! Tu as reussi, le mot est {0} ".format(randomWord))
             print("Bravo ! Tu as reussi, le mot est {0} ".format(randomWord))
         if hmGame.didNaoWin() :
-            naoTalk(motion, "Oh ! Tu as perdu, le mot est {0} ".format(randomWord))
+            naoTalk(motionTalk, "Oh ! Tu as perdu, le mot est {0} ".format(randomWord))
             print("Oh ! Tu as perdu, le mot est {0} ".format(randomWord))
 
     except BaseException as err:

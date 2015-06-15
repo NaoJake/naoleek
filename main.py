@@ -164,9 +164,14 @@ def main(robotIP, robotPort):
     postureProxy.goToPosture("StandInit", 0.5)
 
     customInit(robotIP)
+    try:
+        sayProxy = ALProxy("ALTextToSpeech", robotIP, robotPort)
+        ledProxy = ALProxy("ALLeds", robotIP, robotPort)
+    except Exception as e:
+        print("Could not create proxy to ALRobotPosture")
+        print("Error was: ", e)
 
-    #Lancement de la partie du pendu !
-    hangmanInit.playGame(motion)
+    hangmanInit.playGame(sayProxy, ledProxy)
 
 
 
