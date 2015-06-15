@@ -5,7 +5,7 @@ from naoqi import ALBroker, ALProxy
 from bin.process.hangman import hangmanInit
 
 robotIp = "127.0.0.1"
-robotPort = 55506
+robotPort = 55199
 motionProxy = None
 myBroker = ALBroker("myBroker", "0.0.0.0", 0, robotIp, robotPort)
 
