@@ -1,6 +1,5 @@
 import almath
 import motion
-from main import motionProxy
 
 __author__ = 'Justine Dewilde'
 def makeMove(targetPos):
@@ -17,6 +16,7 @@ def makeMove(targetPos):
     path = [targetPos, currentPos]
     times = [2.0, 4.0]  # seconds
 
+    global motionProxy
     motionProxy.positionInterpolation(effector, space, path,
                                       axisMask, times, isAbsolute)
 
