@@ -6,7 +6,6 @@ dwx # rotation axis X (radians)
 dwy # rotation axis Y (radians)
 dwz # rotation axis Z (radians)
 """
-from main import makeMove
 
 
 def do_horizontal_dash(go_right, full_dash):

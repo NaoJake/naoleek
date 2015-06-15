@@ -1,7 +1,9 @@
-__author__ = 'Justine Dewilde'
-from data import alphabet
-from data import dictionary
 import random
+from data.alphabet import listLetter
+from data.dictionary import dictionaryList
+
+__author__ = 'Justine Dewilde'
+
 
 class HangmanGame:
     lettersAlreadySay = []
@@ -20,12 +22,12 @@ class HangmanGame:
             return False
 
     def getRandomWord(self):
-        randomWord = random.choice(dictionary.dictionaryList)
+        randomWord = random.choice(dictionaryList)
         return randomWord
 
     def getRandomLetter(self):
         while True :
-            randomLetter = random.choice(alphabet.listLetter)
+            randomLetter = random.choice(listLetter)
             if(self.lettersAlreadySay.count(randomLetter) == 0):
                 break
 

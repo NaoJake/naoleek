@@ -3,18 +3,14 @@
 """Cartesian control: Arm trajectory example"""
 import almath
 import motion
-from naoqi import ALProxy, ALBroker
-import sys
+from naoqi import ALBroker, ALProxy
 from bin.process.hangman import hangmanInit
+
 
 robotIp = "127.0.0.1"
 robotPort = 55506
-myBroker = ALBroker("myBroker",
-                   "0.0.0.0",  # listen to anyone
-                   0,  # find a free port and use it
-                   robotIp,  # parent broker IP
-                   robotPort)  # parent broker port
 motionProxy = None
+myBroker = ALBroker("myBroker", "0.0.0.0", 0, robotIp, robotPort)
 
 def StiffnessOn(proxy):
     # We use the "Body" name to signify the collection of all joints
@@ -180,22 +176,6 @@ def main(robotIP, robotPort):
     hangmanInit.playGame(sayProxy, ledProxy)
 
 
-
-def makeMove(targetPos):
-    effector = "RArm"
-    space = motion.FRAME_ROBOT
-    axisMask = almath.AXIS_MASK_VEL  # just control position
-    isAbsolute = False
-
-    # Since we are in relative, the current position is zero
-    currentPos = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-
-    # Go to the target and back again
-    path = [targetPos, currentPos]
-    times = [2.0, 4.0]  # seconds
-
-    motionProxy.positionInterpolation(effector, space, path,
-                                      axisMask, times, isAbsolute)
 
 
 if __name__ == "__main__":

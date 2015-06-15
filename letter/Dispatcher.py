@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-from letter.Line import do_vertical_dash, do_horizontal_dash, do_diagonal_dash, do_z_dash, do_underletter_dash
+from letter.Line import do_vertical_dash, do_horizontal_dash, do_z_dash, do_diagonal_dash, do_underletter_dash
 
 
 def createA():
