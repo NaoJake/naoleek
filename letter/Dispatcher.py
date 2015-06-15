@@ -1,558 +1,558 @@
-# -*- coding: UTF-8 -*-
+# -*- encoding: UTF-8 -*-
 from letter.Line import do_vertical_dash, do_horizontal_dash, do_diagonal_dash, do_z_dash, do_underletter_dash
 
 
-def createA():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(False, True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
+def createA(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createB():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(False, True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(False, True)
+def createB(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createC():
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(False, True)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
+def createC(motionProxy):
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createD():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_diagonal_dash(True, False)
-    do_diagonal_dash(False, False)
+def createD(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_diagonal_dash(False, False, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createE():
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(False, True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(False, True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
+def createE(motionProxy):
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createF():
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(False, True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
+def createF(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createG():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(False, True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(True)
-    do_horizontal_dash(False, False)
+def createG(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(False, False, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_horizontal_dash(True, False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createH():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
+def createH(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createI():
-    do_z_dash(True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
+def createI(motionProxy):
+    do_z_dash(True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, False)
-    do_horizontal_dash(True, True)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createJ():
-    do_horizontal_dash(True, True)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
+def createJ(motionProxy):
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, False)
-    do_horizontal_dash(True, True)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createK():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, False)
-    do_diagonal_dash(True, True)
-    do_diagonal_dash(False, False)
-    do_diagonal_dash(True, False)
+def createK(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_diagonal_dash(True, True, motionProxy)
+    do_diagonal_dash(False, False, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createL():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
+def createL(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createM():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_diagonal_dash(True, False)
-    do_diagonal_dash(True, True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
+def createM(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_diagonal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createN():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_diagonal_dash(True, False)
-    do_diagonal_dash(True, False)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
+def createN(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createO():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(False, True)
+def createO(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createP():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(False, True)
+def createP(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createQ():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(False, True)
-    do_horizontal_dash(True, True)
-    do_diagonal_dash(False, True)
+def createQ(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_diagonal_dash(False, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_diagonal_dash(True, False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createR():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(False)
-    do_horizontal_dash(False, False)
-    do_diagonal_dash(True, False)
+def createR(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(False, False, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createS():
-    do_horizontal_dash(True, True)
-    do_vertical_dash(True)
-    do_horizontal_dash(False, True)
-    do_vertical_dash(True)
-    do_horizontal_dash(True, True)
+def createS(motionProxy):
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createT():
-    do_z_dash(True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_horizontal_dash(False, False)
-    do_horizontal_dash(True, True)
+def createT(motionProxy):
+    do_z_dash(True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_horizontal_dash(False, False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createU():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
+def createU(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createV():
-    do_z_dash(True)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_z_dash(False)
-    do_vertical_dash(False)
-    do_diagonal_dash(True, False)
-    do_diagonal_dash(True, True)
-    do_vertical_dash(True)
+def createV(motionProxy):
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_z_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_diagonal_dash(True, True, motionProxy)
+    do_vertical_dash(True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createW():
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_diagonal_dash(True, True)
-    do_diagonal_dash(True, False)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
+def createW(motionProxy):
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_diagonal_dash(True, True, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createX():
-    do_diagonal_dash(True, True)
-    do_diagonal_dash(False, True)
-    do_diagonal_dash(True, False)
-    do_diagonal_dash(True, True)
-    do_diagonal_dash(False, False)
-    do_diagonal_dash(True, False)
+def createX(motionProxy):
+    do_diagonal_dash(True, True, motionProxy)
+    do_diagonal_dash(False, True, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_diagonal_dash(True, True, motionProxy)
+    do_diagonal_dash(False, False, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createY():
-    do_z_dash(True)
-    do_vertical_dash(True)
-    do_vertical_dash(True)
-    do_z_dash(False)
-    do_diagonal_dash(True, False)
-    do_vertical_dash(False)
-    do_vertical_dash(True)
-    do_diagonal_dash(True, True)
+def createY(motionProxy):
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_z_dash(False, motionProxy)
+    do_diagonal_dash(True, False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(True, motionProxy)
+    do_diagonal_dash(True, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def createZ():
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(False, True)
-    do_diagonal_dash(True, True)
-    do_diagonal_dash(True, True)
-    do_horizontal_dash(False, True)
+def createZ(motionProxy):
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
+    do_diagonal_dash(True, True, motionProxy)
+    do_diagonal_dash(True, True, motionProxy)
+    do_horizontal_dash(False, True, motionProxy)
     #fin lettre
 
-    do_z_dash(True)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_vertical_dash(False)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, True)
-    do_horizontal_dash(True, False)
-    do_z_dash(False)
+    do_z_dash(True, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_vertical_dash(False, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, True, motionProxy)
+    do_horizontal_dash(True, False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def dispatcher(input):
+def dispatcher(input, motionProxy):
     """
-    A la fin d'une lettre on doit se retrouver au debut du tiret de la lettre suivante
-    :param input: la lettre a ecrire
+    A la fin d'une lettre on doit se retrouver au début du tiret de la lettre suivante
+    :param input: la lettre à écrire
     """
-    input.upper()
+    input.upper(motionProxy)
 
     if input == "A":
-        createA()
+        createA(motionProxy)
     elif input == "B":
-        createB()
+        createB(motionProxy)
     elif input == "C":
-        createC()
+        createC(motionProxy)
     elif input == "D":
-        createD()
+        createD(motionProxy)
     elif input == "E":
-        createE()
+        createE(motionProxy)
     elif input == "F":
-        createF()
+        createF(motionProxy)
     elif input == "G":
-        createG()
+        createG(motionProxy)
     elif input == "H":
-        createH()
+        createH(motionProxy)
     elif input == "I":
-        createI()
+        createI(motionProxy)
     elif input == "J":
-        createJ()
+        createJ(motionProxy)
     elif input == "K":
-        createK()
+        createK(motionProxy)
     elif input == "L":
-        createL()
+        createL(motionProxy)
     elif input == "M":
-        createM()
+        createM(motionProxy)
     elif input == "N":
-        createN()
+        createN(motionProxy)
     elif input == "O":
-        createO()
+        createO(motionProxy)
     elif input == "P":
-        createP()
+        createP(motionProxy)
     elif input == "Q":
-        createQ()
+        createQ(motionProxy)
     elif input == "R":
-        createR()
+        createR(motionProxy)
     elif input == "S":
-        createS()
+        createS(motionProxy)
     elif input == "T":
-        createT()
+        createT(motionProxy)
     elif input == "U":
-        createU()
+        createU(motionProxy)
     elif input == "V":
-        createV()
+        createV(motionProxy)
     elif input == "W":
-        createW()
+        createW(motionProxy)
     elif input == "X":
-        createX()
+        createX(motionProxy)
     elif input == "Y":
-        createY()
+        createY(motionProxy)
     elif input == "Z":
-        createZ()
+        createZ(motionProxy)
 
 
-def make_initial_dash(nb_dash):
+def make_initial_dash(nb_dash, motionProxy):
     for i in range(nb_dash):
-        do_underletter_dash(True)
-        do_z_dash(True)
-        do_horizontal_dash(True, False)
-        do_z_dash(False)
+        do_underletter_dash(True, motionProxy)
+        do_z_dash(True, motionProxy)
+        do_horizontal_dash(True, False, motionProxy)
+        do_z_dash(False, motionProxy)
 
     #retour au début
-    do_z_dash(True)
+    do_z_dash(True, motionProxy)
     for i in range(nb_dash):
-        do_horizontal_dash(False, False)
-        do_underletter_dash(False)
-    do_z_dash(False)
+        do_horizontal_dash(False, False, motionProxy)
+        do_underletter_dash(False, motionProxy)
+    do_z_dash(False, motionProxy)
 
 
-def write_at_position(letter, position):
+def write_at_position(letter, position, motionProxy):
     current_position = 0
     for i in range(len(position)):
-        do_z_dash(True)
+        do_z_dash(True, motionProxy)
         for j in range(current_position, position[i]):
             current_position += 1
-            do_underletter_dash(True)
-            do_horizontal_dash(True, False)
-        do_horizontal_dash(True, True)
-        do_vertical_dash(True)
-        do_z_dash(False)
+            do_underletter_dash(True, motionProxy)
+            do_horizontal_dash(True, False, motionProxy)
+        do_horizontal_dash(True, True, motionProxy)
+        do_vertical_dash(True, motionProxy)
+        do_z_dash(False, motionProxy)
         dispatcher(letter)
         current_position += 1
 
     #retour au début
-    do_z_dash(True)
+    do_z_dash(True, motionProxy)
     for k in range(current_position):
-        do_horizontal_dash(False, True)
-        do_underletter_dash(False)
-    do_z_dash(False)
+        do_horizontal_dash(False, True, motionProxy)
+        do_underletter_dash(False, motionProxy)
+    do_z_dash(False, motionProxy)

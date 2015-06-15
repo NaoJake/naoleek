@@ -2,7 +2,7 @@ import almath
 import motion
 
 __author__ = 'Justine Dewilde'
-def makeMove(targetPos):
+def makeMove(targetPos, motionProxy):
     effector = "RArm"
     space = motion.FRAME_ROBOT
     axisMask = almath.AXIS_MASK_VEL  # just control position
@@ -16,7 +16,6 @@ def makeMove(targetPos):
     path = [targetPos, currentPos]
     times = [2.0, 4.0]  # seconds
 
-    global motionProxy
     motionProxy.positionInterpolation(effector, space, path,
                                       axisMask, times, isAbsolute)
 

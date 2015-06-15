@@ -170,14 +170,12 @@ def main(robotIP, robotPort):
         print("Could not create proxy to ALRobotPosture")
         print("Error was: ", e)
 
-    hangmanInit.playGame(sayProxy, ledProxy)
+    hangmanInit.playGame(sayProxy, ledProxy, motionProxy)
 
 
 
 
 if __name__ == "__main__":
-    robotIp = "127.0.0.1"
-    robotPort = 55506
 
     #if len(sys.argv) <= 1:
     #    print("Usage python motion_cartesianArm1.py robotIP (optional default: 127.0.0.1)")
