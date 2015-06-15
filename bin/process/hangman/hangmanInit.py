@@ -8,7 +8,7 @@ __author__ = 'Justine Dewilde'
 
 
 
-def playGame(motionTalk, motionLED):
+def playGame(motionTalk, motionLED, motionProxy):
     "fonction permettant de lancer le jeu"
 
     try:
@@ -26,7 +26,7 @@ def playGame(motionTalk, motionLED):
         time.sleep(1)
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         #ajouter la partie permettant d'ecrire les traits : nbr de traits > (len(randomWord)
-        make_initial_dash(len(randomWord))
+        make_initial_dash(len(randomWord), motionProxy)
         #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         print(randomWord)
 
@@ -45,7 +45,7 @@ def playGame(motionTalk, motionLED):
                 naoTalk(motionTalk, "Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 #fonction a mettre ici : nao ecrit la lettre : lettre > randomLetter & liste des positions :  getPositionOfLetterInWord(randomLetter, randomWord)
-                write_at_position(randomLetter, getPositionOfLetterInWord(randomLetter, randomWord))
+                write_at_position(randomLetter, getPositionOfLetterInWord(randomLetter, randomWord, motionProxy))
                 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                 print("Bien ! La lettre {0} fait partie du mot".format(str(randomLetter)))
             else:
