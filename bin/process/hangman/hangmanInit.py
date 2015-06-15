@@ -13,7 +13,7 @@ def playGame(motion):
         welcome = "Bonjour, nous allons jouer au pendu ! Je vais d'abord choisir un mot"
         naoLEDSOther(motion)
         time.sleep('1')
-        #motion.say(welcome)
+        naoTalk(motion, welcome)
         print(welcome)
         hmGame = hangmanGame.HangmanGame()
         randomWord = hmGame.getWordToFind()
@@ -29,7 +29,13 @@ def playGame(motion):
 
         #Partie
         while not(hmGame.didNaoLost()) and not(hmGame.didNaoWin()):
-            randomLetter = hmGame.getRandomLetter()
+            randomLetter = ""
+            while True :
+                randomLetter = (raw_input('Entrez une lettre: '))
+                if(hmGame.lettersAlreadySay.count(randomLetter) == 0) :
+                    break
+
+            #randomLetter = hmGame.getRandomLetter()
             hmGame.putLetter(randomLetter)
             if hmGame.correctLetter(randomLetter):
                 naoLEDSCorrect(motion)
