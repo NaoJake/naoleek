@@ -2,7 +2,7 @@ import time
 from bin.process.hangman import hangmanGame
 from bin.process.naoUtils import naoLEDSOther, naoTalk, naoLEDSCorrect, naoLEDSError
 from bin.process.strUtils import getPositionOfLetterInWord
-from letter.Dispatcher import make_initial_dash, write_at_position
+from letter.Dispatcher import write_at_position
 
 __author__ = 'Justine Dewilde'
 
@@ -36,7 +36,7 @@ def playGame(motionTalk, motionLED, motionProxy):
             randomLetter = ""
             while True :
                 randomLetter = str(raw_input('Entrez une lettre: '))
-                if(hmGame.lettersAlreadySay.count(randomLetter) == 0) :
+                if hmGame.lettersAlreadySay.count(randomLetter) == 0 and len(randomLetter) == 1:
                     break
 
             #randomLetter = hmGame.getRandomLetter()
